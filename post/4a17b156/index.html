@@ -1,0 +1,77 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="author" content="William Wang"><link rel="alternative" href="/atom.xml" title="生命清流" type="application/atom+xml"><link rel="icon" href="/favicon.png"><title>Hello World - 生命清流</title><link rel="stylesheet" href="/css/main.css"><link rel="stylesheet" href="/js/fancybox/jquery.fancybox.min.css"><!--[if lt IE 9]><script>(function(a,b){a="abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output progress section summary template time video".split(" ");for(b=a.length-1;b>=0;b--)document.createElement(a[b])})()</script><![endif]--><script src="/js/jquery-3.1.1.min.js"></script><script src="/js/fancybox/jquery.fancybox.min.js"></script><meta name="generator" content="Hexo 4.0.0"></head><body style="opacity:0"><header class="head"><h1 class="head-title u-fl"><a href="/">生命清流</a></h1><nav class="head-nav u-fr"><ul class="head-nav__list"><li class="head-nav__item"><a class="head-nav__link" href="/tags">标签</a></li><li class="head-nav__item"><a class="head-nav__link" href="/archives">目录</a></li></ul></nav></header><main class="main"><article class="post"><header class="post__head"><time class="post__time" datetime="2020-11-25T03:17:47.872Z">2020 - 11 - 25 03:17:47</time><h1 class="post__title"><a href="/post/4a17b156/">Hello World</a></h1><div class="post__main echo"><h2 id="Hello"><a href="#Hello" class="headerlink" title="Hello"></a>Hello</h2><h3 id="思维导图"><a href="#思维导图" class="headerlink" title="思维导图"></a>思维导图</h3><pre class="mermaid">graph LR
+X(Hello) --> A>A]
+A-->B("B")
+B-->C1["C1"]
+B-->C2["C2"]
+B-->C3["C3"]
+X --> E>E]
+
+E-->E1("E1")
+E-->E2("E2")
+E-->E3("E3")
+E1-->E11["E11"]
+E1-->E12["E12"]
+E2-->E11
+E2-->E12
+E2-->E13
+E3-->E13["E13"]
+
+X-->G>"G"]
+G-->G1("G1")
+G-->G2("G2")
+G-->G3("G3")
+G1-.->G11["G11"]
+G1-.->G12["G12"]
+G2-.->G12
+G3-.->G11</pre>
+
+<h3 id="时序图"><a href="#时序图" class="headerlink" title="时序图"></a>时序图</h3><pre class="mermaid">sequenceDiagram
+participant o as A
+participant u as B
+participant s as C
+
+s->>s: SSSS
+Note right of s: note
+o-->>s: o to s
+u->>s: s to u
+s->>u: s to u
+u-->>o: u to o
+o-->>u: o to u
+u-->>s: u to s
+s-->>u: s to u
+u->>s: u to s
+u->>s: u to s
+s->>u: s to u
+s->>u: s to u
+u->>s: u to s
+loop Loop
+s-->s:AA
+Note right of s: note2
+s-->>u:，s to u
+s-->s: s to s
+Note right of s: note3
+s-->>u:s to u
+end
+u-->>s: u to s
+s-->>u: s to u</pre>
+
+<h2 id="World"><a href="#World" class="headerlink" title="World"></a>World</h2><h3 id="流程图1"><a href="#流程图1" class="headerlink" title="流程图1"></a>流程图1</h3><pre class="mermaid">graph LR
+A(A) -- ToDo --> B(B)
+B -- ToDo --> G("G")</pre>
+
+<h3 id="流程图2"><a href="#流程图2" class="headerlink" title="流程图2"></a>流程图2</h3><pre class="mermaid">graph TB
+A(A) -- ToDo --> B(B)
+B -- ToDo --> G("G")
+G --> X{X}
+X --Yes--> F(F)
+F --> D{D}
+D-.Yes.-> E(E)
+E -.-> F
+D --> H{H}
+X --ToDo--> J("J")
+H --Yes--> I(I)
+H --ToDo--> J</pre>
+
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTQwMTk3NjgwMiwxMTk5NDE1MTcyXX0=
+--><script src="https://cdn.bootcss.com/mermaid/7.1.2/mermaid.js"></script></div></header><footer class="post__foot u-cf"><ul class="post__tag u-fl"><li class="post__tag__item"><a class="post__tag__link" href="/tags/Hello/">Hello</a></li><li class="post__tag__item"><a class="post__tag__link" href="/tags/World/">World</a></li><li class="post__tag__item"><a class="post__tag__link" href="/tags/mermaid/">mermaid</a></li></ul></footer></article><section class="reward"><a class="btn-reward" href="#">打赏</a><div class="reward-wrapper clearfix"><img src="/img/wechat.png" title="微信"><img src="/img/alipay.png" title="支付宝"></div></section></main><footer class="foot"><div class="foot-copy">&copy; 2019 - 2020 William Wang</div></footer><script src="/js/scroller.js"></script><script src="/js/main.js"></script></body></html>
